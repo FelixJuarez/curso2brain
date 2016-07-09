@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.img_peq{
+	width:30px;
+	height:30px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.ui-icon-phone{
+	background:url(../aseets/phone.png) no-repeat rgba(127,211,121,0.70) !important;
+}
+.ui-icon-mail{
+	background:url(../aseets/mail.png) no-repeat rgba(127,211,121,0.70) !important;
+}
+.caja_blanca{
+	background-color:#FFFFFF;
+	border-radius:10px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-bottom:6px;
+	padding-top:1px;
+	margin-bottom:10px;	
+}
+#foto{
+	text-align:center;
+}
+#foto img{
+	max-height:150px;
+}
+#foto_edit{
+	text-align:center;
+}
+#foto_edit img{
+	max-height:50px;
+}
+#caja_categorias{
+	text-align:center;
+}
+#caja_categorias div{
+	display:inline-block;
+}
+#ta_body{
+	min-height:200px;
+}
+#contenedor_lista{
+	margin-top:40px;
+	

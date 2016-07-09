@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       <link rel="stylesheet" href="css/jquerymobile.css">
+       <link rel="stylesheet" href="css/tema1.css" type="text/css">
+       <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+    <title>Hello World</title>
+
+    </head>
+    <body onload="onDeviceReady">
+      
+        <div data-role="page" id="home">
+            <div data-role="header">
+              <div class=" ui-btn-left">
+              <a href="#form" data-role="button" data-inline="true" data-icon="plus" data-iconpos="notext">Botón</a>
+              <a href="#contactos" data-role="button" data-inline="true" data-icon="grid" data-iconpos="notext">Botón</a>
+              </div>
+            
+            <h1>Mi agenda</h1>
+             <div class=" ui-btn-right">
+              <a href="#ayuda" data-role="button" data-inline="true" data-icon="info" data-iconpos="notext">Botón</a>
+           
+              </div>
+            </div>
+            <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+              <div data-role="collapsible">
+                <h3>Familia</h3>
+                <ul data-role="listview" data-inset="true" data-split-icon="edit">
+                  <li><a href="#detalle"><div class="interir_lista"><img src="aseets/no_foto.png" class="img_peq" /><span>Felix Juarez Duran</span></div></a><a href="#form">Predet.</a></li>
+                  
+                </ul>
+                
+              </div>
+              <div data-role="collapsible" data-collapsed="true">
+                <h3>Trabajo</h3>
+                 <ul data-role="listview" data-inset="true" data-split-icon="edit">
+                  
+                </ul>
+              </div>
+              <div data-role="collapsible" data-collapsed="true">
+                <h3>Amigos</h3>
+                 <ul data-role="listview" data-inset="true" data-split-icon="edit">
+                  
+                </ul>
+              </div>
+            </div>
+          
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="detalle" >
+            <div data-role="header">
+            <div class=" ui-btn-left">
+              <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Botón</a>
+            
+              </div>
+            
+            <h1>Detalle</h1>
+           
+           
+              </div>
+            
+            <div data-role="content">
+            	<div class="caja_blanca">
+            		<p>Familia</p>
+                    <div id="foto"><img src="aseets/no_foto.png" /></div>
+            	</div>
+            
+            	<div class="caja_blanca ui-nodisc-icon" >
+            		<h3 id="nombre">Felix Juarez Duran</h3>
+                    <div id="telefono"><span>786-129-8357</span><a href="#" data-role="button" data-inline="true" data-icon="phone" data-iconpos="notext" >Llamar</a></div>
+                   <div id="email"><span>felixjuarezd@gmail.com</span><a href="#" data-role="button" data-inline="true" data-icon="mail" data-iconpos="notext" >mail</a></div>
+            	</div>
+            
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <div data-role="page" id="form">
+            <div data-role="header">
+             <div class=" ui-btn-left">
+              <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Botón</a>
+            
+              </div>
+            
+            <h1>Nuevo/Editar</h1>
+            </div>
+            <div data-role="content">
+            <div class="caja_blanca">
+                    <div id="foto_edit"><a href="#"><img src="aseets/no_foto.png" /></a>
+                     
+                    </div>
+                    
+            	</div>
+                 	<div data-role="fieldcontain">
+                        <input type="text" name="ti_nombre" id="ti_nombre" value="" placeholder="Nombre" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <input type="text" name="ti_apellidos" id="ti_apellidos" value="" placeholder="Apellidos" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <input type="text" name="ti_telefono" id="ti_telefono" value="" placeholder="Telefono" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <input type="email" name="ti_correo" id="ti_correo" value="" placeholder="Correo" />
+                    </div>
+                    
+                    <div id="caja_categorias">
+                    	<div data-role="fieldcontain">
+                      	<fieldset data-role="controlgroup" data-type="horizontal">
+                        	<input type="radio" name="categoriaSel" id="cat_familia" value="familia" />
+                        	<label for="cat_familia">Familia</label>
+                        	<input type="radio" name="categoriaSel" id="cat_trabajo" value="trabajo" />
+                        	<label for="cat_trabajo">Trabajo</label>
+                        	<input type="radio" name="categoriaSel" id="cat_amigos" value="amigos" />
+                        	<label for="cat_amigos">Amigos</label>
+                      	 </fieldset>
+                    	</div>
+                    </div>
+                    <button id="btn_guardar">Guardar</button>
+                    
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="contactos" data-theme="b">
+            <div data-role="header">
+             <div class=" ui-btn-left">
+              <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Botón</a>
+            
+              </div>
+            
+            <h1>Contacto</h1>
+            </div>
+            <div data-role="content">
+              <div data-role="fieldcontain">
+                <input type="text" name="ti_search" id="ti_search" value=""  placeholder="Nombre..."/>
+              </div>
+              <button id="btn_buscar">Buscar</button>
+              <div id="contenedor_lista" >
+              	<ul data-role="listview">
+                	<li><a href="#">Página</a></li>
+                	<li><a href="#">Página</a></li>
+              	</ul>
+              </div>
+            	
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="mail_page">
+            <div data-role="header">
+            <div class=" ui-btn-left">
+              <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Botón</a>
+            
+              </div>
+            
+            <h1>Mail</h1>
+            </div>
+            <div data-role="content">
+              <div data-role="fieldcontain">
+              	<input type="text" name="ti_asunto" id="ti_asunto" value=""  placeholder="Asunto"/>
+              </div>
+              <div data-role="fieldcontain">
+                  <textarea cols="40" rows="8" name="ta_body" id="ta_body" placeholder="Este el el cuerpo del mensaje..."></textarea>
+              </div>
+              <button id="btn_enviar">Enviar</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="ayuda">
+            <div data-role="header">
+             <div class=" ui-btn-left">
+              <a href="#" data-role="button" data-inline="true" data-icon="back" data-iconpos="notext" data-rel="back">Botón</a>
+            
+              </div>
+            
+            <h1>Ayuda</h1>
+            </div>
+            <div data-role="content">
+            <p>Contenido ayuda</p>
+            <ul>
+            	<li>esta es un texto de ayuda</li>
+                <li>esta es un texto de ayuda</li>
+                <li>esta es un texto de ayuda</li>
+                <li>esta es un texto de ayuda</li>
+                <li>esta es un texto de ayuda</li>
+            </ul>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html>
